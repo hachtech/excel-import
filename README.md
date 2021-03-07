@@ -1,14 +1,46 @@
-# Excel Code Export
+#  import excel file to database with mapping
 
-An Add-In that exports individual module, class, form and XML ribbon files so they can be added/diffed in source control. The only version is currently in VBA.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
-[![Latest Release](https://img.shields.io/github/release/Excel-projects/Excel-Code-Export.svg?label=latest%20release)](https://github.com/Excel-projects/Excel-Code-Export/releases)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/Excel-projects/Excel-Code-Export/latest.svg)](https://github.com/Excel-projects/Excel-Code-Export/commits/master)
-[![GitHub issues](https://img.shields.io/github/issues/Excel-projects/Excel-Code-Export.svg)](https://github.com/Excel-projects/Excel-Code-Export/issues)
+In this tutorial, you will learn how to import excel into a database using the Laravel Excel package.
 
-* Tested on Windows 7 / Excel 2016
+----------
 
-<h1 align="left">
-  <img src="Images/ReadMe/immediate.window.png" />
-</h1>
+# Getting started
+
+## Installation
+
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/7.x/installation)
+
+
+Clone the repository
+
+    git clone  git@github.com:vishalmandora145/excel-import.git
+
+Switch to the repo folder
+
+    cd excel-import
+
+Install all the dependencies using composer
+
+    composer install
+
+Copy the example env file and make the required configuration changes in the .env file
+
+    cp .env.example .env
+
+Generate a new application key
+
+    php artisan key:generate
+
+
+Run the database migrations (**Set the database connection in .env before migrating**)
+
+    php artisan migrate
+
+Start the local development server
+
+    http://localhost/excel-import/dashboard
+
+
+
+
